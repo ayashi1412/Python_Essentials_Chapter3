@@ -55,7 +55,6 @@ print(                                              #Displays as shown. Looks fa
 +================================+
 """)
 user_number = input("Enter an integer number: ")    #Input user's guess number. Input give the output as string.
-
 while int(user_number) != secret_number:            #int(user_number) is used to change the string value to be integer. Comparing the secret value with the secret number.
     print("Ha ha! You are stuck in my loop!")       #Displays this output if the entered number doesn't match to the sercret number 777
 
@@ -82,7 +81,6 @@ while True:                                         #Set while condition if True
 
 user_word = input("Enter a word: ") #It allows user to input a word and assign to user_word variable.
 user_word = user_word.upper()       #changes the word to Uppercase.
-
 for letter in user_word:            #For loop to check A,E,I,O,U in uppercased word.
     if letter == "A":               #Checks letter 'A' in user_word. It if is there.
         continue                    #If A is found in user_word, it will continue to next statement.
@@ -102,7 +100,6 @@ for letter in user_word:            #For loop to check A,E,I,O,U in uppercased w
 word_without_vowels = ""
 user_word = input("Enter a word: ") #It allows user to input a word and assign to user_word variable.
 user_word = user_word.upper()       #changes the word to Uppercase.
-
 for letter in user_word:                #For loop to check A,E,I,O,U in uppercased word.
     if letter == "A":                   #Checks letter 'A' in user_word. It if is there.
         continue                        #If A is found in user_word, it will continue to next statement.
