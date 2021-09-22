@@ -1,4 +1,7 @@
-#SSgt Binod Gurung, MODULE 3.1 LAB CODES  Date: 21 Sep 2021
+#SSgt Binod Gurung, MODULE 3.1 LAB CODES  
+#Date started: 21 Sep 2021
+#Date modidife: 22 Sep 2021
+
 #MODULE 3.1.1.4 Comparision Operators
 
 n = int(input("Enter a numerical value:")) # Input the numerical value to compare.
@@ -115,6 +118,29 @@ for letter in user_word:                #For loop to check A,E,I,O,U in uppercas
         word_without_vowels += letter   #Every character is added on each iteration and assigned to word_without_vowels variable.
 print(word_without_vowels)              #It prints the word without vowels in single line.  
 
+#MODULE 3.2.1.14 LAB: While Loop - Making wooden blocks Pyramid
 
+blocks = int(input("Enter the number of blocks: ")) #Input number of blocks & change to integer.
+height = 0                                          #Assigning current height of the pyramid to be 0.
+in_layer = 1                                        #Assigning the in_layer or the base of the pyramid to be 1
+while in_layer <= blocks:                           #While loop. 
+    height += 1                                     #height variable increased by 1.
+    blocks -= in_layer                              #Number of blocks decreased as it is stacked up.
+    in_layer += 1                                   #
+print("The height of the pyramid:", height)         #printing the heigh of the pyramid.
+
+#MODULE 3.2.1.15 LAB: Collatz's hypothesis
+
+cO = int(input("Enter any non-negative and non-zero integer number: "))#User's input for an integer.
+steps = 0               #assigning steps to 0.
+while cO != 1:          #While loop if c0 is no equal to 0 is True.
+    if int(cO%2) == 0:  #Checking if c0 is an even number. 
+        cO = int(cO/2)  #If c0 is even, int(c0/2) is executed.
+        steps += 1      #Steps is added by 1 to calculate how many loops takes place.
+    elif int(cO%2) != 0:#Checking if c0 is odd number.
+        cO = 3 * cO + 1 #If c0 is odd, this operation is executed.
+        steps += 1      #Steps is added by 1 to calculate how many loops takes place.
+    print(cO)           #It prints the output of c0 from whichever condition is met.
+print("steps = ", steps)#prints out the step = number of operations that took place.
 
 #End of the Module
