@@ -177,4 +177,15 @@ print("Step 5:", beatles)
 
 print("The Fab", len(beatles))                  #Printing the length of the elements in the list.
 
+#MODULE 3.6.1.9 LAB Operating with lists. 
+#The task is to remove all the repetitive numbers from the list and list only once.
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]    #Assigned elements in the list.
+new_list = []                               #New list created to add the elements.
+for i in my_list:                           #Create a loop to go through all the elements in my_list.
+    if i not in new_list:                   #If the checking number is not in my_list, add that number in the new list.
+        new_list.append(i)
+print("The list with unique elements only:")
+print(new_list)                             #Prints the new_list elements without any repetitive numbers.
+
 #End of the Module
