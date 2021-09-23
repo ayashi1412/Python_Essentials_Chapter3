@@ -143,4 +143,38 @@ while cO != 1:          #While loop if c0 is no equal to 0 is True.
     print(cO)           #It prints the output of c0 from whichever condition is met.
 print("steps = ", steps)#prints out the step = number of operations that took place.
 
+#MODULE 3.4.1.6 LAB: Basics of list - This prints the modified elements of the lists.
+
+hat_list = [1, 2, 3, 4, 5]                                  # This is an existing list of numbers hidden in the hat.
+number = int(input("Enter an integer number more than 5: "))# Step 1: write a line of code that prompts the user
+hat_list[2] = number                                        # to replace the middle number with an integer number entered by the user.
+del hat_list[-1]                                            # Step 2: write a line of code that removes the last element from the list.
+length = len(hat_list)                                      # Step 3: write a line of code that prints the length of the existing list.
+print ("The lenght of the modified list is ", length)       
+print("The modified list is ", hat_list)
+
+#MODULE 3.4.1.13 LAB: Beatles - This module modifies the elements of the list.
+
+beatles = []                                    #Creating an empty list.
+print("Step 1:", beatles)   
+
+beatles.append("John Lennon")                   #Adding band members in the list.
+beatles.append("Paul McCartney")                
+beatles.append("George Harrison")
+print("Step 2:", beatles)
+
+for i in range(2):                              #Using for loop to allow users to input band members. In this case just 2.
+    add = input("Enter the new band members: ") #Displays user to input the band members twice.
+    beatles.append(add)
+print("Step 3:", beatles)
+
+del beatles[3]                                  #Deleting 3rd element in the list.
+del beatles[3]                                  #Deleting 3rd element in the list (The 4th becomes 3rd as is deleted in last line.)
+print("Step 4:", beatles)
+
+beatles.insert(0, "Ringo Starr")                #Adding Ringo Star at the beginnning of the list.
+print("Step 5:", beatles)
+
+print("The Fab", len(beatles))                  #Printing the length of the elements in the list.
+
 #End of the Module
