@@ -1,6 +1,7 @@
 #SSgt Binod Gurung, MODULE 3 LAB CODES  
 #Date started: 21 Sep 2021
 #Date modified: 23 Sep 2021
+# # The topics covered within this chapter are Boolean Values, Conditional Execution, Loops, Lists and List Processing, Logical and Bitwise Operations
 
 #MODULE 3.1.1.4 Comparision Operators
 
